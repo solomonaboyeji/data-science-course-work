@@ -1,0 +1,6 @@
+python-dotenv
+loguru
+pandas
+google-play-scraper
+langchain_community
+langchain_core
