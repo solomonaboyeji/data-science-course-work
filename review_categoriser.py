@@ -10,18 +10,13 @@ import pandas as pd
 
 import base64
 
-# Load the ML model
-
 from dotenv import load_dotenv
 from pathlib import Path
 import os
 from loguru import logger
 
 load_dotenv()
-
-
 base_dir_str = "./"
-
 
 configured_model_name = "mistral:7b"
 configured_temp = "1"
@@ -29,7 +24,6 @@ configured_temp = "1"
 configured_model_name = os.getenv("MODEL_NAME", "llama2")
 configured_temp = os.getenv("MODEL_TEMP", "1")
 host_ip = os.getenv("REVIEW_MODEL_HOST_IP", None)
-print(host_ip)
 
 ollama_username = os.getenv("OLLAMA_USERNAME", None)
 ollama_password = os.getenv("OLLAMA_PASSWORD", None)
